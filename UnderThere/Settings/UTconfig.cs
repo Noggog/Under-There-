@@ -1,4 +1,4 @@
-﻿using Mutagen.Bethesda;
+using Mutagen.Bethesda;
 using Mutagen.Bethesda.FormKeys.SkyrimSE;
 using Mutagen.Bethesda.Skyrim;
 using System;
@@ -83,7 +83,6 @@ namespace UnderThere.Settings
         #endregion
 
         [SynthesisOrder]
-        [SynthesisStaticEnumDictionary]
         public Dictionary<Quality, HashSet<FormLink<IClassGetter>>> ClassDefinitions { get; set; } = new Dictionary<Quality, HashSet<FormLink<IClassGetter>>>()
         #region Defaults
         {
@@ -231,7 +230,6 @@ namespace UnderThere.Settings
         #endregion
 
         [SynthesisOrder]
-        [SynthesisStaticEnumDictionary]
         public Dictionary<Quality, HashSet<FormLink<IFactionGetter>>> FactionDefinitions { get; set; } = new Dictionary<Quality, HashSet<FormLink<IFactionGetter>>>()
         #region Defaults
         {
@@ -344,7 +342,6 @@ namespace UnderThere.Settings
         #endregion
 
         [SynthesisOrder]
-        [SynthesisStaticEnumDictionary]
         public Dictionary<Quality, HashSet<FormLink<IFactionGetter>>> FallBackFactionDefinitions { get; set; } = new Dictionary<Quality, HashSet<FormLink<IFactionGetter>>>()
         #region Defaults
         {
